@@ -1,0 +1,32 @@
+.nav-item {
+    position: relative;
+}
+.navbar-nav{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.dropdown-menu {
+    display: none; 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block; 
+    background-color: white;
+    border-radius: 10px;
+    opacity: 1; 
+    animation: rotateIn 0.5s forwards; 
+}
+
+.dropdown-icon {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.nav-item:hover .dropdown-icon {
+    transform: rotate(180deg); /* Rotate 180 degrees on hover */
+}
+
+
+

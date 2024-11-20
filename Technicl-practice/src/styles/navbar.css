@@ -1,0 +1,75 @@
+/* App.css */
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Body Styles */
+.body {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    bottom: 0;
+}
+
+/* Media Queries */
+
+/* For screens larger than 600px (tablets and up) */
+@media (min-width: 600px) {
+    .navbar {
+        text-align: left;
+        padding: 1rem 2rem;
+    }
+
+    .body {
+        padding: 3rem 4rem;
+        text-align: left;
+    }
+
+    .footer {
+        padding: 1rem 2rem;
+    }
+}
+
+/* For screens larger than 1024px (desktops and up) */
+@media (min-width: 1024px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .body {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,62 @@
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.modal-content{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+.slide-left{
+    animation-name:slideInLeft;
+}
+.side-right{
+    animation-name:slideInRight
+}
+.slide-top{
+    animation-name:slideInTop;
+}
+.slide-bottom{
+    animation-name:slideInBottom;
+}
+@keyframes slideInLeft{
+   from {transform: translate(X(-100%));}
+   to {transform: translate(0);}
+}
+@keyframes slideInRight{
+    from {transform: translateY(100%);}
+    to {transform: translate(0);}
+}
+@keyframes slideInTop{
+    from {transform: translateY(-100);}
+    to {transform: translate(0);}
+}
+@keyframes slideInBottom{
+    form {transform: translateY(100%);}
+    to{transform: translate(0);}
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+li{
+   padding: 10px 0;
+   border-bottom: 1px solid #ddd;
+}

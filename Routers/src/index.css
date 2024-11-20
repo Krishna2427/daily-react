@@ -1,0 +1,12 @@
+.routers {
+  text-align: center;
+  list-style: none; /* Removes bullets from the list */
+  padding: 0;       /* Removes default padding */
+}
+
+.routers li {
+  text-align: center;
+  text-decoration: none;
+  display: inline;  /* Makes the list items appear horizontally */
+  margin-right: 20px; /* Adds spacing between list items */
+}
